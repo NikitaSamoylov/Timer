@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+.timer-section {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.timer-section__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: rgb(39, 39, 39);
+}
+.timer-section__title::after {
+    position: relative;
+    content: url("../gift.png");
+    left: 15px;
+    top: 5px;
+}
+.timer {
+    display: flex;
+}
+.timer-item__num {
+    font-size: 87px;
+    font-weight: bold;
+    position: relative;
+    color: red;
+}
+.timer-item__text {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 3px;
+    color: rgb(53, 52, 52);
+}
+.timer-item__num::after {
+    content: ':';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.seconds-num::after {
+    content: '';
+}
